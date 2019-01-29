@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+<head>
+<title>Best of Batman</title>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      background: url("https://i.imgur.com/TPLxiL8.jpg");
+      text-align: center;
+      background-size:cover;
+    }
+    a {
+      color:white;
+      font-family: "Josefin Sans";
+      font-size: 20px;
+    }
+    h1 {
+      color: yellow;
+      font-family: "Josefin Sans";
+    }
+    h2 {
+      font-family: "Exo 2";
+      padding: 10px 0px 0px 0px;
+    }
+    img {
+      width: 60%;
+      border: 5px solid yellow;
+      margin: 16px 0px 0px 0px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.6);
+    }
+    li {
+      display: inline;
+      padding: 20px 20px 20px 20px;
+    }
+    article {
+      max-width: 500px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+    input {
+      border: 1;
+      padding: 9px;
+      font-size: 15px;
+    }
+    input[type="submit"] {
+      background: blue;
+      color: white;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/fDigiUD.png">
+    <h1>The Best of Batman</h1>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Graphic Novels</a></li>
+      <li><a href="#">Comic Book Series</a></li>
+      <li><a href="#">TV Series</a></li>
+      <li><a href="#">Movies</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Use this venue to vote for your favorite Batman graphic novels.</h2>
+  </article>
+    <article>
+    <h2>Batman Gothic</h2>
+    <p>Filled with the intrigue and mystery of the 90's comic books, this novel plays straight into the heart of anyone looking for a good story. The graphics are pretty amazing too and truly have a dark, gothic vibe to them. And, not to give too much away, but the ending is what makes this piece.</p>
+    <button>vote</button>
+  </article>
+  <article>
+    <h2>The Killing Joke</h2>
+    <p>This one is a classic. It features the exposition of the Joker and his fatal attraction to violence brought about by his near-endearing struggle. A definite must read for fans.</p>
+    <button>vote</button>
+  </article>
+  <article>
+    <h2>Hush</h2>
+    <p>The nuance of these volumes is well-executed and is one of the least predictable of any storyarc in the Batman universe. The curious behavior of classic villains is one thing, but seeing the vulnerabilities of Batman is another altogether and this is the one novel where you'll get to see such.</p>
+    <button>vote</button>
+    <h2>Have another favorite? Send it in here:</h2>
+      <input type="graphic novel" placeholder="Your favorite">
+      <input type="submit">
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
